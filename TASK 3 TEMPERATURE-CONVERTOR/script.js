@@ -1,4 +1,4 @@
-function convertTemperature() {
+document.querySelector("#convert").addEventListener("click", function () {
   let temperatureInput = document.getElementById("temperature").value;
   let fromUnit = document.getElementById("fromUnit").value;
   let toUnit = document.getElementById("toUnit").value;
@@ -29,9 +29,9 @@ function convertTemperature() {
   }
 
   displayResult(result, toUnit);
-}
+})
 
-function displayResult(result, unit) {
+const displayResult = (result, unit) => {
   let resultDiv = document.getElementById("result");
   resultDiv.innerHTML = result.toFixed(2);
 }
