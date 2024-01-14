@@ -77,3 +77,31 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+
+/* Making responsive */ 
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 90vw;
+    }
+
+    input,.result-temp {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container{
+        width: 99vw;
+    }
+    select{
+        width: 70px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    h1{
+        font-size: 25px;
+    }
+}
