@@ -47,12 +47,22 @@ label {
 }
 
 input {
-    padding: 8px; 
+    padding: 8px;
     width: 200px;
+    text-align: center;
 }
 
 select {
     padding: 8px;
+}
+
+.result-temp {
+    padding: 8px;
+    width: 200px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgb(122, 122, 122);
+    font-size: 18px;
 }
 
 button {
@@ -67,8 +77,3 @@ button {
 button:hover {
     background-color: #45a049;
 }
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-} 

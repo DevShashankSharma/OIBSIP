@@ -10,10 +10,8 @@
     <div class="container">
       <h1>Temperature Converter</h1>
       <div class="input-temp">
-        <!-- <label for="temperature">Temperature:</label> -->
         <input type="text" id="temperature" placeholder="Enter temperature" />
 
-        <!-- <label for="fromUnit">From Unit:</label> -->
         <select id="fromUnit">
           <option value="celsius">Celsius</option>
           <option value="fahrenheit">Fahrenheit</option>
@@ -22,14 +20,8 @@
       </div>
 
       <div class="output-temp">
-        <input
-          type="text"
-          name="result-temp"
-          id="result-temp"
-          placeholder="Result"
-          disabled
-        />
-        <!-- <label for="toUnit">To Unit:</label> -->
+        <div class="result-temp" id="result"></div>
+
         <select id="toUnit">
           <option value="celsius">Celsius</option>
           <option value="fahrenheit">Fahrenheit</option>
