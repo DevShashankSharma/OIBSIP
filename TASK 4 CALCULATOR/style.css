@@ -50,3 +50,18 @@ body {
     color: white;
   }
   
+
+  @media screen and (max-width: 450px) {
+    .calculator {
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 250px) {
+    .calculator {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .display{
+      grid-column: span 3;
+    }
+  }
