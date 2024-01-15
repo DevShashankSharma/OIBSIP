@@ -10,10 +10,11 @@
 <body>
     <div class="calculator">
       <div class="display" id="display">0</div>
-      <button onclick="clearDisplay()">C</button>
+      <button style="background-color: rgb(255, 7, 7);" onclick="clearDisplay()">C</button>
+      <button onclick="appendInput('(')">(</button>
+      <button onclick="appendInput(')')">)</button>
       <button onclick="backspace()">←</button>
-      <button onclick="calculatePercentage()">%</button>
-      <button class="operator" onclick="setOperator('/')">/</button>
+      
       <button onclick="appendInput('7')">7</button>
       <button onclick="appendInput('8')">8</button>
       <button onclick="appendInput('9')">9</button>
@@ -28,12 +29,13 @@
       <button class="operator" onclick="setOperator('+')">+</button>
       <button onclick="appendInput('0')">0</button>
       <button onclick="appendInput('.')">.</button>
-      <button class="equals" onclick="calculate()">=</button>
       <button onclick="calculateSquareRoot()">√</button>
-      <button onclick="appendInput('(')">(</button>
-      <button onclick="appendInput(')')">)</button>
+      <button class="operator" onclick="setOperator('/')">/</button>
+
+      <button onclick="calculatePercentage()">%</button>
       <button onclick="calculateSquare()">x^2</button>
       <button onclick="calculateReciprocal()">1/x</button>
+      <button style="background-color: rgb(113, 113, 113); color: #ffffff;" onclick="calculate()">=</button>
     </div>
     <script src="script.js"></script>
   </body>
