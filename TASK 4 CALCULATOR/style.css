@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .display {
+    grid-column: span 4;
+    background-color: #eee;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    overflow: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+
+  
+/* Hide scrollbar for WebKit browsers */
+.display::-webkit-scrollbar { 
+  height: 0;
+}
+
+.display::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+  
+  button {
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .operator,
+  .equals {
+    background-color: #f79494;
+    color: white;
+  }
+  
