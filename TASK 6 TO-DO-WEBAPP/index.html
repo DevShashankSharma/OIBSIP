@@ -12,7 +12,7 @@
     </header>
     <div class="container">
       <!-- Form to add tasks -->
-      <form id="taskForm">
+      <form id="taskForm" onsubmit="return false">
         <input type="text" id="title" placeholder="Title" required />
         <textarea
           name="description"
@@ -29,45 +29,11 @@
       <div class="lists">
         <div class="task-list" id="pendingTasks">
           <h2>Pending Tasks</h2>
-          <ul class="pending-task">
-            <li>
-              <div class="todo-title">hello</div>
-              <div class="todo-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, possimus.</div>
-              <div class="btn">
-                <img src="svg/edit.svg" alt="">
-                <img src="svg/delete.svg" alt="">
-                <img src="svg/mark.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div class="todo-title">hello</div>
-              <div class="todo-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, possimus.</div>
-              <div class="btn">
-                <img src="svg/edit.svg" alt="">
-                <img src="svg/delete.svg" alt="">
-                <img src="svg/mark.svg" alt="">
-              </div>
-            </li>
-          </ul>
+          <ul class="pending-task"></ul>
         </div>
         <div class="task-list" id="completedTasks">
           <h2>Completed Tasks</h2>
-          <ul> 
-                <li>
-                  <div class="todo-title">hello</div>
-                  <div class="todo-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, possimus.</div>
-                  <div class="btn"> 
-                    <img src="svg/delete.svg" alt=""> 
-                  </div>
-                </li>
-                <li>
-                  <div class="todo-title">hello</div>
-                  <div class="todo-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, possimus.</div>
-                  <div class="btn"> 
-                    <img src="svg/delete.svg" alt=""> 
-                  </div>
-                </li>
-          </ul>
+          <ul class="completed-task"></ul>
         </div>
       </div>
     </div>

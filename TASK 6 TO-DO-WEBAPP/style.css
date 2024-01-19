@@ -13,14 +13,14 @@ header {
     font-size: 24px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin: 0;
 }
 
 .container {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -28,7 +28,7 @@ h1{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,10 +36,13 @@ form{
     padding: 5px;
     gap: 10px;
     width: 250px;
+    height: fit-content;
     background-color: #ebe7e7;
+    position: sticky;
+    top: 5px;
 }
 
-form>input{
+form>input {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -48,7 +51,7 @@ form>input{
     box-sizing: border-box;
 }
 
-form>textarea{
+form>textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
@@ -58,7 +61,7 @@ form>textarea{
     resize: none;
 }
 
-form>button{
+form>button {
     width: 100%;
     padding: 10px;
     background-color: #00ffa2;
@@ -69,17 +72,18 @@ form>button{
     cursor: pointer;
 }
 
-form>button:hover{
+form>button:hover {
     background-color: #00cc99;
 }
 
-form>button:active{
+form>button:active {
     background-color: #009966;
+    transform: scale(0.95);
 }
 
-.lists{
+.lists {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     width: calc(100% - 300px);
     background-color: #ebe7e7;
     justify-content: space-between;
@@ -92,20 +96,20 @@ form>button:active{
     padding: 10px;
 }
 
-.task-list{
+.task-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 98%;
     padding: 10px;
     background-color: #fff;
     border-radius: 5px;
 }
 
-.task-list>ul{
+.task-list>ul {
     list-style-type: none;
-    padding: 10px; 
+    padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -114,7 +118,7 @@ form>button:active{
     gap: 10px;
 }
 
-.task-list>ul>li{
+.task-list>ul>li {
     width: 100%;
     height: 60px;
     display: flex;
@@ -127,4 +131,55 @@ form>button:active{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-list>ul li .defination {
+    width: 85%;
+    height: 58px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.task-list>ul li .defination:hover {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.task-list>ul li .defination:active {
+    font-size: 14px;
+}
+
+.todo-title {
+    width: 10%;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.todo-desc {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.btn {
+    display: flex;
+    gap: 10px;
+}
+
+.btn img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    content: "edit";
+}
+
+.btn img:active {
+    cursor: pointer;
+    transform: scale(0.8);
 }
