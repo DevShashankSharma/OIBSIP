@@ -29,15 +29,63 @@
       <div class="lists">
         <div class="task-list" id="pendingTasks">
           <h2>Pending Tasks</h2>
+          <div class="body-title">
+            <p>Title</p>
+            <p>Description</p>
+            <p>Actions</p>
+          </div>
           <ul class="pending-task"></ul>
         </div>
         <div class="task-list" id="completedTasks">
           <h2>Completed Tasks</h2>
+          <div class="body-title">
+            <p>Title</p>
+            <p>Description</p>
+            <p>Actions</p>
+          </div>
           <ul class="completed-task"></ul>
         </div>
       </div>
     </div>
 
+    <!-- The Modal -->
+    <div class="overlay" id="modalOverlay">
+      <div class="modal">
+        <form id="taskForm" onsubmit="return false">
+          <input type="text" id="title" placeholder="Title" required />
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Description"
+            required
+          ></textarea>
+          <button type="submit" onclick="saveAndClose(this)">
+            Save Changes
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal 2  -- view modal -->
+    <div class="overlay2" id="modalOverlay2">
+      <div class="modal2">
+        <form id="taskForm" onsubmit="return false">
+          <input type="text" id="title" placeholder="Title" required readonly />
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+            placeholder="Description"
+            required
+            readonly
+          ></textarea>
+          <button type="submit" onclick="closeModal()">Close</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
